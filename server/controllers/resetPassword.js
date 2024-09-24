@@ -24,13 +24,13 @@ exports.resetPasswordToken = async (req, res) => {
     )
     console.log("DETAILS", updatedDetails)
 
-    const url = `http://localhost:3000/update-password/${token}`
+    const url = `https://notes-keep-chi.vercel.app/update-password/${token}`
     // const url = `https://studynotion-edtech-project.vercel.app/update-password/${token}`
 
     await mailSender(
       email,
       "Password Reset",
-      `Your Link for email verification is ${url}. Please click this url to reset your password.`
+      `Your Link for email verification is ${url} Please click this url to reset your password.`
     )
 
     res.json({
