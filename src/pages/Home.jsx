@@ -12,7 +12,7 @@ function Home() {
 
       {/* Content */}
       <div className="relative flex flex-col items-center justify-center h-full text-white">
-        <h1 className="text-4xl font-bold mb-6">Now rent a friend.</h1>
+        <h1 className="text-4xl font-bold mb-6">Now keep your notes safe.</h1>
         <button 
           className="bg-pink-300 hover:bg-pink-500 text-white font-bold py-2 px-6 rounded"
           onClick={() => navigate("/signup")}
